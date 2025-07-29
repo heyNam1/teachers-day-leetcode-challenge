@@ -19,20 +19,20 @@ public:
 
             if (i + 1 < s.length())
             {
-                int next = roman[s[i + 1]];
+                next = roman[s[i + 1]];
             }
             else
             {
                 next = 0;
             }
 
-            if (total < next)
+            if (value < next)
             {
-                total -= next;
+                total -= value;
             }
             else
             {
-                total += next;
+                total += value;
             }
         }
         return total;
